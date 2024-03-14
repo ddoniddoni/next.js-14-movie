@@ -1,6 +1,6 @@
 # NomadCoder NextJS 14ver 강의
 
-## Link => next-js-14-movie-rbxu13w8r-sangdonparks-projects.vercel.app
+## Link => [Vercel 배포 링크](next-js-14-movie-rbxu13w8r-sangdonparks-projects.vercel.app)
 
 ## 2.3 SSR vs CSR
 
