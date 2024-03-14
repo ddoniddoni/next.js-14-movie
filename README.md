@@ -1,5 +1,7 @@
 # NomadCoder NextJS 14ver 강의
 
+## Link => next-js-14-movie-rbxu13w8r-sangdonparks-projects.vercel.app
+
 ## 2.3 SSR vs CSR
 
 먼저 렌더링에 대해 알아보자
@@ -89,3 +91,32 @@ Promise.all을 사용해도 묶인 함수가 둘 다 끝나야만 데이터를 �
 <br/>한쪽만 데이터를 다 가져왔지만 한쪽이 로딩중이면 데이터가 다 나오지 않는것이다.
 <br/>이걸 해결하기 위해 Suspense를 사용한다.
 <br/>Suspense가 데이터를 fetch하기 위해 이 안의 component를 await하는 중.
+
+## 3.7 Error Handling
+
+하나의 페이지는 잘 작동하지 않을 수 있지만, 전체 웹이 오류에서 벗어나지 못하면 안된다.
+<br/>디렉토리안에 error.js(jsx) 파일을 작성하면 해당 페이지않에 error가 발생했을 때
+<br/> Error Page를 보여준다.
+<br/>(error.js파일은 해당 page.tsx 파일에만 적용)
+
+## 4.0 Vercel에 배포
+
+Next.js는 Vercel을 통해 배포할 수 있다.
+<br/>github와 연동하여 github에 업데이트를 할때마다 빌드가 새로 되어서 최신화면을 볼 수 있다.
+
+## 4.1 CSS Module
+
+여러 라이브러리를 사용해도 되지만 Next.js는 .module.css 확장자를 사용하는 css모듈을 기본적으로 지원한다.
+<br/> 방법은 javascript처럼 import를 해야한다.
+<br/> ex) import style from '../styles/navigation.module.css;
+<br/> ex) nav className={styles.nav}
+<br/> 예제처럼 사용을 해야한다.
+
+<br/> Global Styles
+<br/> 글로벌 스타일은 앱 디렉터리 내의 모든 레이아웃, 페이지 또는 컴포넌트를 가져올 수 있음.
+
+## 4.5 Deployment
+
+prefetch => Link 컴포넌트가 사용자의 뷰포트에 들어갈 때 발생
+<br/>백그라운드에서 prefetch 및 load하여 클라이언트 측 성능 향상
+<br/>prefetch는 프로덕션에서만 활성화됩니다.
